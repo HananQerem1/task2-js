@@ -14,9 +14,9 @@ exchangeForm.onsubmit = function(e){
 }
 function convertAmount(){
     if(element[1].value == "Dollar"){
-        return (element[0].value * 3.50);
+        return (element[0].value / 3.50);
     }else if(element[1].value == "Dinar"){
-        return (element[0].value * 5);
+        return (element[0].value / 5);
     }else{
         return (element[0].value);
     }
